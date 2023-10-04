@@ -7,7 +7,7 @@ config.vm.provider "virtualbox" do |v|
 end
 
   config.vm.box = "hashicorp/bionic64"  
-  config.vm.network "forwarded_port", guest: 80, host: 8090
+  config.vm.network "forwarded_port", guest: 80, host: 8091
   config.vm.network "public_network", ip: "192.168.10.100", bridge:"Intel(R) Wireless-AC 9560"
   config.vm.provision "shell", path: "script.sh"
   config.vm.synced_folder "site/" , "/var/www/html"
