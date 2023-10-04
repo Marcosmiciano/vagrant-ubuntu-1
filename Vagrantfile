@@ -1,9 +1,9 @@
 Vagrant.configure("2") do |config|
 
 config.vm.provider "virtualbox" do |v|
-  v.name = "PRIMEIRA-MAQUINA-VAGRANT-01"
-  v.memory = "2048"
-  v.cpus = "3"
+  v.name = "VAGRANT-UBUNTU"
+  v.memory = "1024"
+  v.cpus = "1"
 end
 
   config.vm.box = "hashicorp/bionic64"  
