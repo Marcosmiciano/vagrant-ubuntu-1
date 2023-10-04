@@ -2,7 +2,7 @@ Vagrant.configure("2") do |config|
 
 config.vm.provider "virtualbox" do |v|
   v.name = "PRIMEIRA-MAQUINA-VAGRANT-01"
-  V.memory = "2048"
+  v.memory = "2048"
   v.cpus = "3"
 end
 
