@@ -10,5 +10,5 @@ end
   config.vm.network "forwarded_port", guest: 80, host: 8091
   config.vm.network "public_network", ip: "192.168.10.100", bridge:"Intel(R) Wireless-AC 9560"
   config.vm.provision "shell", path: "script.sh"
-  config.vm.synced_folder "vagrant-shell-script-nginx/" , "/var/www/html"
+  config.vm.synced_folder "site/" , "/var/www/html"
 end
